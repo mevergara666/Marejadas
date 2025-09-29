@@ -1,7 +1,10 @@
 package marejadas;
 import java.io.*;
 import java.util.*;
-
+/**
+ *
+ * @author Duoc
+ */
 public class LectorArchivo {
      public List<Dato> leer(String nombreArchivo){
          List<Dato> lista = new ArrayList<>();
@@ -12,7 +15,7 @@ public class LectorArchivo {
                  if(primera){
                      primera = false;
                      continue;
-                    }
+                 }
                 String[] partes = linea.trim().split("\\s+");
                 if(partes.length >= 7){
                     double anio = Double.parseDouble(partes[0]);
